@@ -58,8 +58,8 @@ header{
 }
 
 .page-header{
-  background-image: url("/Users/braxtonhathaway/Code/Final Projects/1.5 CSS layout and flexbox-Assessment/img/header-img.jpg");
-  background-size: 100% 400px;
+  background-image: url("../img/header-img.jpg");
+  background-size: cover;
   background-position: top;
 }
 
@@ -89,6 +89,7 @@ header{
   font-family: 'Dancing Script';
   justify-content: center;
   position: absolute;
+  text-shadow:  10px 10px 5px #888888;
   font-size: 58px;
   left: 160px;
   top: 49px;
@@ -104,30 +105,77 @@ main{
 
 main>div{display: block;}
 
+.blog-row{
+  width: 800px;
+}
+
 .item{
+  position: relative;
+  margin: 50px 10px;
+  padding: 50px;
+  background-color: white;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+#dino{
+  background-image: url("../img/dino.jpg");
+}
+
+#xx{
+  background-image: url("../img/xx.png");
+}
+
+#yhact-img{
+  background-image: url("../img/yhact.jpg");
+}
+
+.auth-pic{
+  background-image: url("../img/author.jpeg");
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  background-size: cover;
+}
+
+.meta{
   display: flex;
-  padding: 20px
+  flex-flow: row wrap;
+  justify-content: space-between;
+  box-shadow: 0px 9px 17px -3px #888888;
+}
+
+.blog-img{
+  float: right;
+  background-size: 200px 200px;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
 
 }
 
 .icon-wrapper{
   display: block;
-  height: 30px;
-  width: 30px;
-  line-height: 30px;
-
+  position: absolute;
+  top: 50px;
+  right: 0;
+  left: 0;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  vertical-align: middle;
+  text-align: center;
   -moz-border-radius: 30px;
   border-radius: 30px;
-
+  margin: 0 auto;
   background-color: #eeeadf;
   color: white;
   text-align: center;
   font-size: 1em;
-  margin-left: 160px;
+  /*margin-left: 160px;*/
   z-index: 3
 }
 
-.meta{
+/*.meta{
   display: flex;
   position: absolute;
   z-index: 3
@@ -135,28 +183,49 @@ main>div{display: block;}
 
 .date{
   padding: 0 50px
-}
+}*/
 
 .entry-title{
-  position: absolute;
-  display: flex;
-
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 36px;
+  font-family: "Josefin Sans"
 }
+
+.aside-heading{
+  font-family: "Josefin Sans";
+  padding-top: 40px;
+  font-size: 30px;
+  border-bottom-width: 3px;
+  border-bottom-color: black;
+  border-bottom-style: solid;
+  padding-bottom: 56px;
+  width: 398px;
+  text-align: center;
+}
+
+
 
 .primary-txt{
-  position: relativ;
-  display: flex;
-  background-color: white;
-  z-index: 2;
-  text-align: left;
-  width: 200px;
-  height: 200px;
-  font-size: 10px;
+  line-height: 30px;
+  font-size: 20px;
+  font-family: "Noto Serif"
 }
 
-aside{
-  text-align: left;
+aside {
+  display: flex;
+  flex-direction: column;
+  background-color: #F0EBDE;
+  position: relative;
+  margin: 50px 50px;
+  padding: 50px;
+  box-shadow: 10px 10px 5px #888888;
+  align-items: center;
+  width: 364px;
+
 }
+
+
 
 footer{
   position: absolute;
