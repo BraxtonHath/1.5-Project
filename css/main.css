@@ -1,0 +1,169 @@
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+nav{
+  position: absolute;
+  background-color: #31312f;
+  background-size: cover;
+  width: 100%
+}
+
+ul{
+  display:flex;
+  justify-content: center;
+  color:white;
+  text-decoration: none;
+  padding: 0 auto;
+}
+
+nav>ul>li>a{
+color: white;
+text-decoration: none;
+font-weight: bold;
+text-transform: uppercase;
+}
+
+
+.nav-item{
+  display: inline-block;
+  padding: 0 200px;
+  width: 110px;
+  font-size: 14px;
+  line-height: 3;
+  font-weight: 400;
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+header{
+  position: ;
+  background-color: red;
+  height: 400px
+}
+
+.page-header{
+  background-image: url("/Users/braxtonhathaway/Code/Final Projects/1.5 CSS layout and flexbox-Assessment/img/header-img.jpg");
+  background-size: 100% 400px;
+  background-position: top;
+}
+
+.header-content {
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  width: 800px;
+  padding: 10px;
+  text-align: center;
+  color: #333333;
+}
+
+.main-heading{
+  display: flex;
+  font-family: 'Josefin Sans';
+  justify-content: center;
+  position: absolute;
+  font-size: 100px;
+  left: 300px;
+  top: -39px;
+
+}
+
+.sub-heading{
+  display: flex;
+  font-family: 'Dancing Script';
+  justify-content: center;
+  position: absolute;
+  font-size: 58px;
+  left: 160px;
+  top: 49px;
+  color: white;
+}
+
+main{
+  display:flex;
+  background-color: #fdfeec;
+  background-size: 108px 400px;
+  margin: -50px 110px;
+}
+
+main>div{display: block;}
+
+.item{
+  display: flex;
+  padding: 20px
+
+}
+
+.icon-wrapper{
+  display: block;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+
+  background-color: #eeeadf;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  margin-left: 160px;
+  z-index: 3
+}
+
+.meta{
+  display: flex;
+  position: absolute;
+  z-index: 3
+}
+
+.date{
+  padding: 0 50px
+}
+
+.entry-title{
+  position: absolute;
+  display: flex;
+
+}
+
+.primary-txt{
+  position: relativ;
+  display: flex;
+  background-color: white;
+  z-index: 2;
+  text-align: left;
+  width: 200px;
+  height: 200px;
+  font-size: 10px;
+}
+
+aside{
+  text-align: left;
+}
+
+footer{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  background-color: #efefef;
+  text-align: center;
+}
