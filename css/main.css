@@ -140,7 +140,7 @@ main>div{display: block;}
 .meta{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   box-shadow: 0px 9px 17px -3px #888888;
 }
 
@@ -222,7 +222,7 @@ aside {
   box-shadow: 10px 10px 5px #888888;
   align-items: center;
   width: 364px;
-  height: 1100px
+  align-self: flex-start;
 
 }
 
